@@ -88,8 +88,6 @@ public class Main {
             System.out.println("Ошибка, представлены координаты не треугольника.");
             return false;
         }
-
     }
-
-
 }
+

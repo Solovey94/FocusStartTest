@@ -27,7 +27,7 @@ public class Triangle implements Comparable<Triangle> {
         sideThird = Math.sqrt((coord_x2 - coord_x3) * (coord_x2 - coord_x3) + (coord_y2 - coord_y3) * (coord_y2 - coord_y3));
     }
 
-
+    // isIsoscelesTriangle() - проверка на равнобедренность
     public boolean isIsoscelesTriangle() {
         if (sideFirst == sideSecond || sideSecond == sideThird || sideFirst == sideThird) {
             return true;
@@ -36,7 +36,7 @@ public class Triangle implements Comparable<Triangle> {
         }
     }
 
-
+    // getArea() - нахождение площади треугольника
     public double getArea() {
         double perimeter;
 
@@ -60,8 +60,5 @@ public class Triangle implements Comparable<Triangle> {
     public String toString() {
         return Integer.toString(coord_x1) + " " + Integer.toString(coord_y1) + " " + Integer.toString(coord_x2) + " " + Integer.toString(coord_y1) + " " + Integer.toString(coord_x3) + " " + Integer.toString(coord_y3);
     }
-
-
+    
 }
-
-
